@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   2. HEADER & NAVIGATION STYLING (Flexbox)
+   ========================================== */
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Jarak antar menu navigasi */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+/* Efek warna berubah saat kursor mendekati link menu */
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* ==========================================
+   3. MAIN CONTENT LAYOUT
+   ========================================== */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 0.3rem;
+}
+
+/* ==========================================
+   4. SUMMARY CARDS STYLING (CSS Grid)
+   ========================================== */
+/* Menggunakan CSS Grid untuk membuat 3 kolom statistik berjajar rapi */
+section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border-top: 4px solid #1abc9c;
+}
+
+article h3 {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* ==========================================
+   5. TABLE STYLING
+   ========================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Efek belang-belang (Zebra stripes) pada baris genap tabel */
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Efek perubahan warna baris saat kursor mendekat */
+tbody tr:hover {
+    background-color: #f1f2f6;
+}
+
+td button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+/* Styling tombol Edit (Posisi tombol pertama) */
+td button:nth-of-type(1) {
+    background-color: #f39c12;
+    margin-right: 5px;
+}
+
+td button:nth-of-type(1):hover {
+    background-color: #d68910;
+}
+
+/* Styling tombol Delete (Posisi tombol kedua) */
+td button:nth-of-type(2) {
+    background-color: #e74c3c;
+}
+
+td button:nth-of-type(2):hover {
+    background-color: #c0392b;
+}
+
+/* ==========================================
+   6. FORM STYLING
+   ========================================== */
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form p {
+    margin-bottom: 1.2rem;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Efek fokus pada form input (garis luar berubah warna) */
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #1abc9c;
+}
+
+form button[type="submit"] {
+    background-color: #2ecc71;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* ==========================================
+   7. FOOTER STYLING
+   ========================================== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2c3e50;
+    color: #ffffff;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
