@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List of Members - SIMPUS-Mini</title>
     <!-- Penghubung ke file CSS di luar subfolder -->
     <link rel="stylesheet" href="../style.css">
@@ -9,60 +10,66 @@
 <body>
 
     <header>
-        <h1>SIMPUS-Mini</h1>
-        <nav>
-            <ul>
-                <li><a href="/jobsheet-01/index.html">Home</a></li>
-                <li><a href="/jobsheet-01/books/list.html">List of Books</a></li>
-                <li><a href="/jobsheet-01/books/tambah.html">Add Book</a></li>
-                <li><a href="/jobsheet-01/members/list.html">List of Members</a></li>
-                <li><a href="/jobsheet-01/members/tambah.html">Add Member</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>SIMPUS-Mini</h1>
+    <!-- Checkbox Hack for Hamburger Menu (Without JavaScript) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+    
+    <nav>
+        <ul>
+            <li><a href="/jobsheet-01/index.html">Home</a></li>
+            <li><a href="/jobsheet-01/books/list.html">List of Books</a></li>
+            <li><a href="/jobsheet-01/books/tambah.html">Add Book</a></li>
+            <li><a href="/jobsheet-01/members/list.html">List of Members</a></li>
+            <li><a href="/jobsheet-01/members/tambah.html">Add Member</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         <section>
             <h2>List of Members</h2>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Member No</th>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>No. HP</th>
-                        <th>Join Date</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Member No</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>No. HP</th>
+                            <th>Join Date</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr>
-                        <td>A001</td>
-                        <td>Zhao Yufan</td>
-                        <td>Malang</td>
-                        <td>0812xxxx</td>
-                        <td>2026-08-01</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Delete</button>
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>A001</td>
+                            <td>Zhao Yufan</td>
+                            <td>Malang</td>
+                            <td>0812xxxx</td>
+                            <td>2026-08-01</td>
+                            <td>
+                                <button type="button">Edit</button>
+                                <button type="button">Delete</button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>A002</td>
-                        <td>Tezaa Gracelynne</td>
-                        <td>Malang</td>
-                        <td>0813xxxx</td>
-                        <td>2026-08-15</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Delete</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                        <tr>
+                            <td>A002</td>
+                            <td>Tezaa Gracelynne</td>
+                            <td>Malang</td>
+                            <td>0813xxxx</td>
+                            <td>2026-08-15</td>
+                            <td>
+                                <button type="button">Edit</button>
+                                <button type="button">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
 

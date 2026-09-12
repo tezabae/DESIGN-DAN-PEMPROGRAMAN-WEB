@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List of Books - SIMPUS-Mini</title>
     <!-- Penghubung ke file CSS di luar subfolder -->
     <link rel="stylesheet" href="../style.css">
@@ -9,67 +10,73 @@
 <body>
 
     <header>
-        <h1>SIMPUS-Mini</h1>
-        <nav>
-            <ul>
-                <li><a href="/jobsheet-01/index.html">Home</a></li>
-                <li><a href="/jobsheet-01/books/list.html">List of Books</a></li>
-                <li><a href="/jobsheet-01/books/tambah.html">Add Book</a></li>
-                <li><a href="/jobsheet-01/members/list.html">List of Members</a></li>
-                <li><a href="/jobsheet-01/members/tambah.html">Add Member</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>SIMPUS-Mini</h1>
+    <!-- Checkbox Hack for Hamburger Menu (Without JavaScript) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+    
+    <nav>
+        <ul>
+            <li><a href="/jobsheet-01/index.html">Home</a></li>
+            <li><a href="/jobsheet-01/books/list.html">List of Books</a></li>
+            <li><a href="/jobsheet-01/books/tambah.html">Add Book</a></li>
+            <li><a href="/jobsheet-01/members/list.html">List of Members</a></li>
+            <li><a href="/jobsheet-01/members/tambah.html">Add Member</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         <section>
             <h2>List of Books</h2>
             
-            <table> 
-                <thead> 
-                    <tr> 
-                        <th>Title</th> 
-                        <th>Author</th> 
-                        <th>Year</th> 
-                        <th>Stock</th>
-                        <th>Aksi</th> 
-                    </tr> 
-                </thead> 
-                <tbody> 
-                    <tr> 
-                        <td>Laskar Pelangi</td> 
-                        <td>Andrea Hirata</td> 
-                        <td>2005</td> 
-                        <td>4</td> 
-                        <td> 
-                            <button type="button">Edit</button>
-                            <button type="button">Delete</button> 
-                        </td> 
-                    </tr> 
+            <div class="table-responsive">
+    <table> 
+        <thead> 
+            <tr> 
+                <th>Title</th> 
+                <th>Author</th> 
+                <th>Year</th> 
+                <th>Stock</th>
+                <th>Aksi</th> 
+            </tr> 
+        </thead> 
+        <tbody> 
+            <tr> 
+                <td>Laskar Pelangi</td> 
+                <td>Andrea Hirata</td> 
+                <td>2005</td> 
+                <td>4</td> 
+                <td> 
+                    <button type="button">Edit</button>
+                    <button type="button">Delete</button> 
+                </td> 
+            </tr> 
 
-                    <tr>
-                        <td>Atomic Habits</td>
-                        <td>James Clear</td>
-                        <td>2018</td>
-                        <td>5</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Delete</button>
-                        </td>
-                    </tr>
+            <tr>
+                <td>Atomic Habits</td>
+                <td>James Clear</td>
+                <td>2018</td>
+                <td>5</td>
+                <td>
+                    <button type="button">Edit</button>
+                    <button type="button">Delete</button>
+                </td>
+            </tr>
 
-                    <tr>
-                        <td>Filosofi Teras</td>
-                        <td>Henry Manampiring</td>
-                        <td>2018</td>
-                        <td>3</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Delete</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <tr>
+                <td>Filosofi Teras</td>
+                <td>Henry Manampiring</td>
+                <td>2018</td>
+                <td>3</td>
+                <td>
+                    <button type="button">Edit</button>
+                    <button type="button">Delete</button>
+                </td>
+                </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
 
